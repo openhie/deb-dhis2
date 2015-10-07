@@ -1,0 +1,9 @@
+#!/bin/sh
+# dhis2 post install
+
+# add root to correct dhis2 group
+dhis2-create-admin root
+# add openhie instance (could change name later)
+dhis2-instance-create -p 8084 openhie
+# Deploy war, 2.20 in this case
+dhis2-deploy-war -l https://www.dhis2.org/download/releases/2.20/dhis.war openhie

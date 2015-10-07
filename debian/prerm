@@ -1,0 +1,2 @@
+#!/bin/sh
+dhis2-shutdown openhie
