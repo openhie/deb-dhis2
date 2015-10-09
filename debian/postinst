@@ -4,6 +4,6 @@
 # add root to correct dhis2 group
 dhis2-create-admin root
 # add openhie instance (could change name later)
-dhis2-instance-create -p 8084 openhie
+dhis2-instance-create -p 8084 dhis2
 # Deploy war, 2.20 in this case
-dhis2-deploy-war -l https://www.dhis2.org/download/releases/2.20/dhis.war openhie
+dhis2-deploy-war -l https://www.dhis2.org/download/releases/2.20/dhis.war dhis2
