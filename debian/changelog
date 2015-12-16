@@ -1,0 +1,35 @@
+dhis2 (2.21-0ubuntu5) trusty; urgency=medium
+
+  * add jvm8 as pre-dependency 
+
+ -- keybase.io/ryanyates <ryanyates@keybase.io>  Wed, 18 Nov 2015 20:10:08 +0000
+
+dhis2 (2.21-0ubuntu4) trusty; urgency=medium
+
+  * fix typos in postinst 
+
+ -- keybase.io/ryanyates <ryanyates@keybase.io>  Wed, 18 Nov 2015 17:16:00 +0000
+
+dhis2 (2.21-0ubuntu3) trusty; urgency=low
+
+  * use pgtune to tune postgres during postinst 
+
+ -- keybase.io/ryanyates <ryanyates@keybase.io>  Tue, 17 Nov 2015 22:28:18 +0000
+
+dhis2 (2.21-0ubuntu2) trusty; urgency=medium
+
+  * add postgresql as dependency
+
+ -- keybase.io/ryanyates <ryanyates@keybase.io>  Thu, 12 Nov 2015 20:30:14 +0000
+
+dhis2 (2.21-0ubuntu1) trusty; urgency=low
+
+  * Change to DHIS2.21, add java 8 as dependency
+
+ -- keybase.io/ryanyates <ryanyates@keybase.io>  Thu, 12 Nov 2015 19:52:48 +0000
+
+dhis2 (2.20-0ubuntu1) trusty; urgency=low
+
+  * Initial release 
+
+ -- keybase.io/ryanyates <ryanyates@keybase.io>  Wed, 11 Nov 2015 15:25:14 +0000

@@ -1,0 +1,18 @@
+#!/bin/sh
+PGDATA=/etc/postgresql/9.3/main
+# dhis2 post install
+mkdir -p /var/lib/dhis2
+# add root to correct dhis2 group
+dhis2-create-admin root
+# add openhie instance (could change name later)
+dhis2-instance-create -p 8084 dhis2
+
+## Tune postgres db
+echo "Running pgtune..."
+pgtune -i $PGDATA/postgresql.conf -o $PGDATA/postgresql.conf.pgtune
+mv $PGDATA/postgresql.conf $PGDATA/postgresql.conf.backup
+mv $PGDATA/postgresql.conf.pgtune $PGDATA/postgresql.conf
+service postgresql restart
+
+# Deploy war, 2.21 in this case
+dhis2-deploy-war -l https://www.dhis2.org/download/releases/2.21/dhis.war dhis2

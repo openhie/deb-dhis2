@@ -1,0 +1,17 @@
+Source: dhis2
+Section: java
+Priority: optional
+Maintainer: keybase.io/ryanyates <ryanyates@keybase.io>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+Homepage: http://dhis2.org
+#Vcs-Git: git://git.debian.org/collab-maint/dhis2.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/dhis2.git;a=summary
+
+Package: dhis2
+Architecture: amd64
+Pre-Depends: oracle-java8-installer
+Depends: ${shlibs:Depends}, ${misc:Depends}, dhis2-tools, postgresql, pgtune
+Description: DHIS 2 is the flexible, web-based open-source
+ information system with awesome visualization features 
+ including GIS, charts and pivot tables.
