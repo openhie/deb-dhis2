@@ -1,3 +1,9 @@
+dhis2 (2.21-0ubuntu6) trusty; urgency=medium
+
+  * set JAVA_HOME to oracle java8
+
+ -- keybase.io/ryanyates <ryanyates@keybase.io>  Mon, 21 Dec 2015 15:43:00 +0000
+
 dhis2 (2.21-0ubuntu5) trusty; urgency=medium
 
   * add jvm8 as pre-dependency 

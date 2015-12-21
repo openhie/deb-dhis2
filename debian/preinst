@@ -1,1 +1,4 @@
 #!/bin/sh
+
+# Change JAVA_HOME to oracle java8
+echo "JAVA_HOME=/usr/lib/jvm/java-8-oracle" >> /etc/default/tomcat7
