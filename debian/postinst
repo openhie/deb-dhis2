@@ -7,6 +7,17 @@ dhis2-create-admin root
 # add openhie instance (could change name later)
 dhis2-instance-create -p 8084 dhis2
 
+# Have dhis2 listen on all interfaces. (Should really use a XML parser here)
+# This allows easy setup, but reccommend setting up a proxy for prod use. 
+sed -i 's/address="127.0.0.1"/address="0.0.0.0"/' /var/lib/dhis2/dhis2/conf/server.xml
+sed -i 's/proxyPort="443"//' /var/lib/dhis2/dhis2/conf/server.xml
+sed -i 's/scheme="https"//' /var/lib/dhis2/dhis2/conf/server.xml
+
+
+# Create apps dir and set permissions
+mkdir -p /var/lib/dhis2/dhis2/apps
+chown -R dhis2:dhis2 /var/lib/dhis2/dhis2/apps
+
 ## Tune postgres db
 echo "Running pgtune..."
 pgtune -i $PGDATA/postgresql.conf -o $PGDATA/postgresql.conf.pgtune
@@ -16,3 +27,5 @@ service postgresql restart
 
 # Deploy war, 2.21 in this case
 dhis2-deploy-war -l https://www.dhis2.org/download/releases/2.21/dhis.war dhis2
+
+# TODO: Initialize apps dir/url via api.

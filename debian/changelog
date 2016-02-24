@@ -1,3 +1,27 @@
+dhis2 (2.21-0ubuntu10) trusty; urgency=low
+
+  * let dhis2 listen on 8084 
+
+ -- keybase.io/ryanyates <ryanyates@keybase.io>  Wed, 13 Jan 2016 15:21:58 +0000
+
+dhis2 (2.21-0ubuntu9) trusty; urgency=low
+
+  * remove nginx and allow dhis2 to listen on all interfaces 
+
+ -- keybase.io/ryanyates <ryanyates@keybase.io>  Mon, 11 Jan 2016 20:41:03 +0000
+
+dhis2 (2.21-0ubuntu8) trusty; urgency=low
+
+  * add nginx proxy 
+
+ -- keybase.io/ryanyates <ryanyates@keybase.io>  Fri, 08 Jan 2016 20:39:34 +0000
+
+dhis2 (2.21-0ubuntu7) trusty; urgency=low
+
+  * create apps dir 
+
+ -- keybase.io/ryanyates <ryanyates@keybase.io>  Fri, 08 Jan 2016 20:00:16 +0000
+
 dhis2 (2.21-0ubuntu6) trusty; urgency=medium
 
   * set JAVA_HOME to oracle java8

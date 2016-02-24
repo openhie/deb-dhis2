@@ -11,7 +11,7 @@ Homepage: http://dhis2.org
 Package: dhis2
 Architecture: amd64
 Pre-Depends: oracle-java8-installer, oracle-java8-set-default, tomcat7
-Depends: ${shlibs:Depends}, ${misc:Depends}, dhis2-tools, postgresql, pgtune
+Depends: dhis2-tools, postgresql, pgtune
 Description: DHIS 2 is the flexible, web-based open-source
  information system with awesome visualization features 
  including GIS, charts and pivot tables.
