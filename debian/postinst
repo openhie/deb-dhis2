@@ -25,7 +25,7 @@ mv $PGDATA/postgresql.conf $PGDATA/postgresql.conf.backup
 mv $PGDATA/postgresql.conf.pgtune $PGDATA/postgresql.conf
 service postgresql restart
 
-# Deploy war, 2.21 in this case
-dhis2-deploy-war -l https://www.dhis2.org/download/releases/2.21/dhis.war dhis2
+# Deploy war, 2.23 in this case
+dhis2-deploy-war -l https://www.dhis2.org/download/releases/2.23/dhis.war dhis2
 
 # TODO: Initialize apps dir/url via api.
