@@ -1,3 +1,9 @@
+dhis2 (2.23-0ubuntu1) trusty; urgency=medium
+
+  * Change version to 2.23 
+
+ -- keybase.io/ryanyates <ryanyates@keybase.io>  Thu, 02 Jun 2016 00:03:26 +0000
+
 dhis2 (2.21-0ubuntu10) trusty; urgency=low
 
   * let dhis2 listen on 8084 
